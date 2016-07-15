@@ -11,7 +11,11 @@ $.fn.extend({
 });
 
 
+
 function iniciar(){
+
+	var a = $('#ir')
+	a.click(primero)
 
 	var z = $('#infra');
 	z.click(cuarto);
@@ -19,11 +23,17 @@ function iniciar(){
 	var y = $('#volver_quienes')
 	y.click(quinto);
 
-	var a = $('#ir')
-	a.click(primero);
+	var b = $('#progra')
+	b.click(segundo);	
 
-	var b = $('#logosena')
-	a.click(segundo);
+	var c = $('#algo')
+	c.click(mostrar);
+
+	var c = $('#noticia')
+	c.click(tercero);
+
+	var x = $('#primeraimagen')
+	x.click(sexto);
 }
 
 function quinto(){
@@ -32,19 +42,35 @@ function quinto(){
 	$('#logo').hide();
 }
 
-function segundo(){
-
+function primero(){
+	$('#contenido').hide();	
+	$('#logo').animateCss('rollIn');
 	$('#logo').show();
 }
 
-function primero(){
-	$('#contenido').hide();
-	$('#quienes').animateCss('zoomIn');
-	$('#quienes').html('<center><img src="img/logosena.jpg" class="img-responsive hola" href="quienes.html"/></center><h1 class="text-center"><b>CENTRO DE FORMACIÓN EN DISEÑO,CONFECCIÓN Y MODA</b></h1> ');
+function segundo(){
+	$('#contenido').show();	
+	$('#contenido').html('');
+	$('#logo').hide();
 }
 
+function tercero(){
+	$('#contenido').show();	
+	$('#contenido').html('');
+	$('#logo').hide();
+}
 function cuarto(){
 	$('#contenido').show().animateCss('rotateInUpLeft');
 	$('#contenido').html('<div class="container"><div class="row"><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/1.jpg" alt="" class="img-responsive nada"  height="300px"></div ><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/2.jpg" alt="" class="img-responsive nada"></div><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/3.jpg" alt="" class="img-responsive nada"></div><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/4.jpg" alt="" class="img-responsive nada"></div></div></div>');
 	$('#logo').hide();
+}
+
+function mostrar(){
+
+	$('#contenido').show().animateCss('rotateInUpLeft');
+	$('#logo').hide();
+}
+
+function sexto(){
+	$('#logo').show();
 }
