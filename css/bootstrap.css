@@ -3166,16 +3166,16 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
+  background-color: #278175;
   border-color: #2e6da4;
 }
 .btn-primary .badge {
-  color: #337ab7;
+  color: #278175;
   background-color: #fff;
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
+  background-color: #278175;
   border-color: #4cae4c;
 }
 .btn-success:focus,
@@ -3186,7 +3186,7 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #449d44;
+  background-color: #278175;
   border-color: #398439;
 }
 .btn-success:active,
@@ -3223,7 +3223,7 @@ fieldset[disabled] .btn-success:focus,
 .btn-success.disabled.focus,
 .btn-success[disabled].focus,
 fieldset[disabled] .btn-success.focus {
-  background-color: #5cb85c;
+  background-color: #278175;
   border-color: #4cae4c;
 }
 .btn-success .badge {
@@ -3232,25 +3232,25 @@ fieldset[disabled] .btn-success.focus {
 }
 .btn-info {
   color: #fff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #278175;
+  border-color: #278175;
 }
 .btn-info:focus,
 .btn-info.focus {
   color: #fff;
-  background-color: #31b0d5;
+  background-color: #278175;
   border-color: #1b6d85;
 }
 .btn-info:hover {
   color: #fff;
-  background-color: #31b0d5;
+  background-color: #ED6C05;
   border-color: #269abc;
 }
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #fff;
-  background-color: #31b0d5;
+  background-color: #278175;
   border-color: #269abc;
 }
 .btn-info:active:hover,
@@ -3263,7 +3263,7 @@ fieldset[disabled] .btn-success.focus {
 .btn-info.active.focus,
 .open > .dropdown-toggle.btn-info.focus {
   color: #fff;
-  background-color: #269abc;
+  background-color: #278175;
   border-color: #1b6d85;
 }
 .btn-info:active,
@@ -3285,7 +3285,7 @@ fieldset[disabled] .btn-info.focus {
 }
 .btn-info .badge {
   color: #5bc0de;
-  background-color: #fff;
+  background-color: #278175;
 }
 .btn-warning {
   color: #fff;
@@ -3300,7 +3300,7 @@ fieldset[disabled] .btn-info.focus {
 }
 .btn-warning:hover {
   color: #fff;
-  background-color: #ec971f;
+  background-color: #278175;
   border-color: #d58512;
 }
 .btn-warning:active,
