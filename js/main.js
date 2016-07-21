@@ -10,7 +10,23 @@ $.fn.extend({
     }
 });
 
-
+$(document).ready(function(){
+ 
+	$('.ir-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > 0 ){
+			$('.ir-arriba').slideDown(300);
+		} else {
+			$('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
 
 function iniciar(){
 
@@ -55,12 +71,14 @@ function segundo(){
 }
 
 function tercero(){
-	$('#contenido').show();	
+	$('#contenido').show();
+	$('#contenido').animateCss('fadeInUp');	
 	$('#contenido').html('<center> <div class="container"><div class="row"><div class="col-xs-12 col-sm-6 col-lg-3"><img src="img/noticias/1.jpg" class="primera img-responsive" width="200"/><br><br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ver Noticias</button><div id="myModal" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Noticias</h4></div><div class="modal-body"><p>Lugar:Auditorio del 6to. Piso del Mobiliario Hora:8:00 a.m. a 10:00 p.m Día:miércoles 18 de mayo de 2016.</p><br><img src="img/noticias/1.jpg" class="img-responsive"/></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div><div class="col-xs-12 col-sm-6 col-lg-3"><img src="img/noticias/2.jpg" class="primera img-responsive" width="200"/><br><br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Ver Noticias</button><div id="myModal2" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Noticias</h4></div><div class="modal-body"><p>¿Quiere vender más?</p><br><img src="img/noticias/2.jpg" class="img-responsive"/></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div><div class="col-xs-12 col-sm-6 col-lg-3"><img src="img/noticias/3.jpg" class="primera img-responsive" width="200"/><br><br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Ver Noticias</button><div id="myModal3" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Noticias</h4></div><div class="modal-body"><p>Cuerpo,Cultura y contexto</p><br><img src="img/noticias/3.jpg" class="img-responsive"/></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div><div class="col-xs-12 col-sm-6 col-lg-3"><img src="img/noticias/5.png" class="primera img-responsive" width="200"/><br><br><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Ver Noticias</button><div id="myModal4" class="modal fade" role="dialog"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Noticias</h4></div><div class="modal-body"><p>Invitación para aprendices show gastronómico.</p><br><img src="img/noticias/5.png" class="img-responsive"/></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div></div></div></div></div>');
+	$('#logo').hide();
 }
 function cuarto(){
 	$('#contenido').show().animateCss('rotateInUpLeft');
-	$('#contenido').html('<div class="container"><div class="row"><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/1.jpg" alt="" class="img-responsive nada"  height="300px"></div ><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/2.jpg" alt="" class="img-responsive nada"></div><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/3.jpg" alt="" class="img-responsive nada"></div><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/4.jpg" alt="" class="img-responsive nada"></div></div></div>');
+	$('#contenido').html('<div id= "tres"><center><h1><p>Imagenes</p></center></div><div class="container"><div class="row"><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/1.jpg" alt="" class="img-responsive nada"  height="300px"></div ><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/2.jpg" alt="" class="img-responsive nada"></div><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/3.jpg" alt="" class="img-responsive nada"></div><div class="col-md-3 col-xs-12 col-sm-6"><img src="img/Infra/4.jpg" alt="" class="img-responsive nada"></div></div></div>');
 	$('#logo').hide();
 }
 
