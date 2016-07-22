@@ -14,6 +14,9 @@
 	background-image: url("../img/arrow-up.png");
 }
 
+.tres{
+	
+}
 .lead{
 	font-size: 10px;
 }
@@ -88,3 +91,32 @@ hr {
     padding: 15px;
     text-align: center;
 }
+
+.ccolor{
+
+	background-color :#D3D0CD ;
+}
+
+
+ * {
+  margin:0px;
+ }
+ 
+ html, body {
+  height: 100%;
+ }
+
+
+ .wrapper {
+  min-height: 100%;
+  clear:both;
+ }
+
+
+ footer {
+  position: relative;
+  margin-top: -63px; /* ponga en negativo el alto de su pie de página para nuestro    ejemplo usamos 63, usted debe remplazarlo según su diseño   */
+  height: 63px;
+  clear:both;
+  width:100%;
+ }
