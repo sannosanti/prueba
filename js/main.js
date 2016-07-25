@@ -67,7 +67,6 @@ function primero(){
 	$('#contenido').hide();	
 	$('#logo').animateCss('rollIn');
 	$('#logo').show();
-	$('body').addClass("ccolor");
 }
 
 function segundo(){

@@ -2,15 +2,24 @@
 	background-color: #EB6F0D;
 }
 
+ .navbar li a{
+ 	color:green;
+ }
+
+.navbar{
+	background-color: #027B74;
+	color:;
+}
+
 .ir-arriba {
 	display:none;
-	padding:20px;
+	padding:24px;
 	font-size:20px;
 	color:#fff;
 	cursor:pointer;
 	position: fixed;
-	bottom:20px;
-	right:20px;
+	bottom:41px;
+	right:10px;
 	background-image: url("../img/arrow-up.png");
 }
 
@@ -47,6 +56,13 @@ hr {
 .hola{
 	margin:10px 10px 10px 10px;
 	border-radius:12px ;
+
+}
+.hola1{
+
+	color:white;
+	text-align: center;
+	
 }
 
 .hola:hover{
@@ -114,9 +130,10 @@ hr {
 
 
  footer {
+  background-color:#E66F14 ;
   position: relative;
-  margin-top: -63px; /* ponga en negativo el alto de su pie de página para nuestro    ejemplo usamos 63, usted debe remplazarlo según su diseño   */
-  height: 63px;
+  margin-top: -33px; /* ponga en negativo el alto de su pie de página para nuestro    ejemplo usamos 63, usted debe remplazarlo según su diseño   */
+  height: 45px;
   clear:both;
   width:100%;
- }
+  te
